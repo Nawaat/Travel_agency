@@ -34,7 +34,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 background: transparent;
-padding: 30px 18%;
+padding: 30px ;
 transition: ease .40s;
 }
 
@@ -42,7 +42,7 @@ transition: ease .40s;
 /* la classe qu'on a ajouter au scroll (js) afin de modifier */
 header.sticky{
 	background: var(--bg-color);
-	padding: 10px 18%;
+	padding: 10px 30px  ;
 	box-shadow: rgba(33,35,38, 0.1) 0px 10px 10px -10px;
 }
 .sticky .logo{
@@ -295,4 +295,67 @@ section{
 	color: var(--bg-color);
 	font-size: 14px;
 	letter-spacing: 2px;
+}
+
+
+/* Media Query */
+@media (max-width:1040px) {
+	#menu-icon{
+		display: block;
+	}
+	.sticky #menu-icon{
+		color: var(--text-color);
+	}
+	.home{
+		height: 95vh;
+	}
+	.navbar{
+		position: absolute;
+		top: 0;
+		right: -100%;
+		width: 270px;
+		height: 120vh;
+		background:rgba(137, 66, 122, 0.948);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 150px 30px;
+		transition: 0.5s all;
+	}
+	.navbar a{
+		display: block;
+		margin: 1.2rem 0;
+	}
+	.sticky .navbar a{
+		color: var(--bg-color);
+	}
+	.navbar a:hover{
+		color: var(--text-color);
+	}
+	.open{
+		right: 0;
+	}
+	.list{
+		width: 50%;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 575px){
+	.list{
+		width: 100%;
+	}
+	:root{
+	  --big-font: 3.8rem;
+	  --h2-font: 1.8rem;
+	  transition: .2s;
+	} 
+
+	 .text{
+		text-align: center;
+	}
+	.home{
+		height: 85vh;
+		transition: .2s;
+	}
 }
