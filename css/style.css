@@ -12,7 +12,7 @@
 	--bg-color: #fff;
 	--text-color: #221314;
 	--second-color: #5a7184;
-	--main-color: #6e54fa;
+	--main-color: rgb(139, 56, 121);
 	--big-font: 6rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
@@ -100,7 +100,7 @@ section{
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background: url(../img/background.jpg);
+	background: url(../img/fond.jpg);
 	background-size: cover;
 	background-position: center;
 	display: grid;
@@ -122,13 +122,14 @@ section{
 	font-weight: 400;
 	line-height: 38px;
 	margin-bottom: 50px;
+	
 }
 .home-btn{
 	display: inline-block;
 	font-size: 16px;
 	padding: 15px 30px;
 	background: #ffffffbf;
-	color: var(--main-color);
+	color:var(--main-color);
 	border-radius: 4px;
 	transition: ease .40s;
 } 
@@ -189,3 +190,51 @@ section{
 	border: 1px solid transparent;
 	transform: translateY(-3px);
 } 
+
+/* ------------------------ Destinations -------------------- */
+
+.title{
+	text-align: center;
+}
+
+.destination-contents{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	margin-top: 5rem;
+}
+.col-content{
+	position: relative;
+}
+
+.col-content img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 15px;
+	filter: brightness(80%);
+	transition: all .3s cubic-bezier(.495,.05,.55,.95);
+	will-change: filter;
+}
+
+.col-content h5{
+	position: absolute;
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--bg-color);
+	left: 15px;
+	bottom: 60px;
+}
+.col-content p{
+	position: absolute;
+	font-size: 15px;
+	color: var(--bg-color);
+	left: 15px;
+	bottom: 30px;
+	letter-spacing: 2px;
+}
+.col-content img:hover{
+	transform: scale(1.04);
+	cursor: pointer;
+}
