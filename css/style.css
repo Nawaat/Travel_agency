@@ -238,3 +238,61 @@ section{
 	transform: scale(1.04);
 	cursor: pointer;
 }
+
+/* ------------------------------ footer --------------------- */
+
+#contact{
+	background: var(--main-color);
+	padding: 50px;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+
+.list{
+	width: 25%;
+}
+
+.list h4 {
+	font-size: 20px;
+	color: var(--bg-color);
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.list h4::before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 60px;
+	left: 0;
+	bottom: -10px;
+	background: var(--bg-color);
+}
+.list ul li:not(last-child) {
+	margin-bottom: 16px;
+}
+.list ul li a{
+	color: #ffffffbf;
+	font-size: var(--p-font);
+	display: block;
+	transition: .3s;
+}
+.list ul li a:hover{
+	color: var(--bg-color);
+	transform: translateX(14px);
+}
+
+.end-text{
+	text-align: center;
+	padding-top: 50px;
+}
+.end-text p{
+	color: var(--bg-color);
+	font-size: 14px;
+	letter-spacing: 2px;
+}
