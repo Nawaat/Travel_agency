@@ -144,6 +144,7 @@ section{
 .text h2{
 	font-size: var(--h2-font);
 	line-height: 1.1; /* definie la hauteur entre les lignes*/
+	text-align: center
 }
 
 .row-items{
@@ -202,7 +203,7 @@ section{
 	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 	grid-gap: 2rem;
 	align-items: center;
-	margin-top: 5rem;
+	margin-top: 3rem;
 }
 .col-content{
 	position: relative;
