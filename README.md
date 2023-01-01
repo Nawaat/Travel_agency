@@ -1,4 +1,4 @@
-Site Travel Agency
+# **Site Travel Agency**
 
 C'est une maquette entièrement responsive, ce qui signifie qu'il s'adapte automatiquement à toutes les tailles d'écran, des plus petits aux plus grands.
 
